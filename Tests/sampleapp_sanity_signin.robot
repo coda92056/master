@@ -1,23 +1,18 @@
 *** Settings ***
 Library  SeleniumLibrary
-#include support for rotbot framework and webdrivermanager
-#030520
+#date 020520
 
 *** Variables ***
 
 *** Test Cases ***
 User launches browser
     [Documentation]  To sanity check Sample App website
-    OPEN BROWSER  https://enigmatic-inlet-91460.herokuapp.com/  chrome
+    OPEN BROWSER  https://enigmatic-inlet-91460.herokuapp.com/login chrome
     sleep  5s
-    WAIT UNTIL PAGE CONTAINS  Welcome to the Sample App
+    WAIT UNTIL PAGE CONTAINS  Log in
     #input text  id=twotabsearchtextbox  Ferrari 408
     sleep  2s
-    #click button  xpath=//*[@id="nav-search"]/form/div[2]/div/input
-    #sleep  2s
     #WAIT UNTIL PAGE CONTAINS  results for "Ferrari 408"
     #go to home page
     #click element  xpath=//*[@id="nav-logo"]/a[1]
     close browser
-
-*** Keywords ***

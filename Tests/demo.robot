@@ -1,7 +1,7 @@
 *** Settings ***
 
 Library  SeleniumLibrary
-
+#include support for rotbot framework and webdrivermanager
 
 
 *** Variables ***
