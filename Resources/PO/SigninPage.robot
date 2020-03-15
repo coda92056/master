@@ -11,4 +11,5 @@ Sign In
     input text  id=session_password  password
     click button  xpath=//input[@name='commit']
     WAIT UNTIL PAGE CONTAINS  Koda Bare
+    Log     ${Log_Message}
 

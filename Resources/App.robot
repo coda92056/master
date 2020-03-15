@@ -1,10 +1,8 @@
 *** Settings ***
-Resource    ../Resources/PO/landingPage.robot
 Resource    ../Resources/PO/SigninPage.robot
 Resource    ../Resources/PO/PostMessagePage.robot
-Resource   ../Resources/PO/LandingPage.robot
-Resource   ../Resources/PO/SigninPage.robot
-Resource   ../Resources/PO/PostMessagePage.robot
+Resource    ../Resources/PO/LandingPage.robot
+
 
 
 #date 031320  Marcos
