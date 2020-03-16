@@ -5,7 +5,7 @@ Library  SeleniumLibrary
 
 *** Keywords ***
 Begin Web Test
-    OPEN BROWSER  about:blank   ${Browser}
+    OPEN BROWSER  about:blank   ${BROWSER}
 
 
 Quit Browser
