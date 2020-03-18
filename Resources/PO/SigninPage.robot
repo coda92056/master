@@ -4,6 +4,7 @@ Library  SeleniumLibrary
 
 *** Keywords ***
 Sign In
+    Log  ${GLOBAL_MESSAGE}
     click link  Log in
     WAIT UNTIL PAGE CONTAINS  Log in
     sleep  2s
@@ -11,5 +12,5 @@ Sign In
     input text  id=session_password  password
     click button  xpath=//input[@name='commit']
     WAIT UNTIL PAGE CONTAINS  Koda Bare
-    Log     ${Log_Message}
+
 

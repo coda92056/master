@@ -4,6 +4,7 @@ Library  SeleniumLibrary
 
 *** Keywords ***
 Load
+    Log  ${GLOBAL_MESSAGE}
 #   Go To  https://enigmatic-inlet-91460.herokuapp.com
     Go to  ${START_URL}
 

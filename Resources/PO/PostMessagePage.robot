@@ -9,6 +9,7 @@ Library  SeleniumLibrary
 *** Keywords ***
 
 PostMessage
+     Log  ${GLOBAL_MESSAGE}
      Click link  Home
      Sleep  2s
      WAIT UNTIL PAGE CONTAINS  Micropost Feed
