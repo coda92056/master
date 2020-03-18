@@ -13,15 +13,29 @@ ${START_URL}     https://enigmatic-inlet-91460.herokuapp.com
 
 
 *** Test Cases ***
-
-User can Log into Website and post a message
-    [Documentation]
-    ${time}=   get time
-    Log  ${TIME}
+User can Log into Website
+    [Tags]  Smoke
     App.Launch Web site
-    App.Sign
-    App.Post
-    Log     ${TIME}
+
+User can Sign in
+    [Tags]  Smoke
+    [Documentation]
+    App.Launch Web site
+    App.Signin
+
+User can post a message
+    [Documentation]
+    [Tags]  Full
+    App.Launch Web site
+    App.Signin
+    App.PostMessage
+
+User can post and delete message
+    [Tags]  working
+    [Documentation]
+    App.Launch Web site
+    App.Signin
+    App.Post and delete Message
 
 
 
