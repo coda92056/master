@@ -15,6 +15,7 @@ Launch Web site
    LandingPage.Verify Page Loaded
 Signin
    SigninPage.SignIn
+   SigninPage.EnterCreds
 PostMessage
    PostMessagePage.PostMessage
 Post and delete Message
@@ -23,6 +24,10 @@ View Another Users Posts
    ViewUserPostPage.View User Micropost Feed
 Signout
    SignoutPage.Signout
+SigninInvalid
+   SigninPage.SignIn
+   SigninPage.BadCreds
+
 
 
 

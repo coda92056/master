@@ -17,16 +17,17 @@ ${GLOBAL_MESSAGE}  Script is running
 *** Test Cases ***
 User can Launch Website
     [Tags]  Smoke
+    [Documentation]     If successful user can launch/view website
     App.Launch Web site
 
 User can Sign in
     [Tags]  Smoke
-    [Documentation]
+    [Documentation]     If successful can sign in
     App.Launch Web site
     App.Signin
 
 User can post a message
-    [Documentation]
+    [Documentation]   If successful can post a message
     [Tags]  Full
     App.Launch Web site
     App.Signin
@@ -34,24 +35,32 @@ User can post a message
 
 User can post and delete message
     [Tags]  Full
-    [Documentation]
+    [Documentation]  If successful can create and delete posts
     App.Launch Web site
     App.Signin
     App.Post and delete Message
 
 User can view another users Posts
     [Tags]  Full
-    [Documentation]
+    [Documentation]  If successful can view another users posts
     App.Launch Web site
     App.Signin
     App.View Another Users Posts
 
 User can log out
-   [Tags]  working
-   [Documentation]
+   [Tags]  Smoke
+   [Documentation]  If successful it should sign out user
     App.Launch Web site
     App.Signin
     App.Signout
+
+InvalidUser
+   [Tags]  Smoke
+   [Documentation]  If not successful it should return a error message
+    App.Launch Web site
+    App.SigninInvalid
+
+
 
 
 
