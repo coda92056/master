@@ -33,11 +33,25 @@ User can post a message
     App.PostMessage
 
 User can post and delete message
-    [Tags]  working
+    [Tags]  Full
     [Documentation]
     App.Launch Web site
     App.Signin
     App.Post and delete Message
+
+User can view another users Posts
+    [Tags]  Full
+    [Documentation]
+    App.Launch Web site
+    App.Signin
+    App.View Another Users Posts
+
+User can log out
+   [Tags]  working
+   [Documentation]
+    App.Launch Web site
+    App.Signin
+    App.Signout
 
 
 
