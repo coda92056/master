@@ -4,7 +4,8 @@ Resource    ../Resources/Common.robot
 Test Setup     Common.Begin Web Test
 Test Teardown  Common.Quit Browser
 
-#robot -d results Tests/Sampleapp.robot
+#robot -d results Tests/Sampleapp.robot    returns a warning and unstable.. use the command line with python
+#python -m robot -d results -i smoke  -v BROWSER:Firefox  Tests/Sampleapp.robot
 
 *** Variables ***
 #GLOBAL VARIABLES
@@ -48,14 +49,14 @@ User can view another users Posts
     App.View Another Users Posts
 
 User can log out
-   [Tags]  Smoke
+   [Tags]  Full
    [Documentation]  If successful it should sign out user
     App.Launch Web site
     App.Signin
     App.Signout
 
 InvalidUser
-   [Tags]  Smoke
+   [Tags]  Full
    [Documentation]  If not successful it should return a error message
     App.Launch Web site
     App.SigninInvalid
