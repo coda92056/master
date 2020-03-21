@@ -6,6 +6,7 @@ Test Teardown  Common.Quit Browser
 
 #robot -d results Tests/Sampleapp.robot    returns a warning and unstable.. use the command line with python
 #python -m robot -d results -i smoke  -v BROWSER:Firefox  Tests/Sampleapp.robot
+#Note: running Jenkins build command uses -v browser:headlesschrome or headlessfirefox
 
 *** Variables ***
 #GLOBAL VARIABLES
