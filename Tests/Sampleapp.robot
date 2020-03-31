@@ -23,7 +23,7 @@ User can Launch Website
     App.Launch Web site
 
 User can Sign in
-    [Tags]  Smoke
+    [Tags]  Full
     [Documentation]     If successful can sign in
     App.Launch Web site
     App.Signin
