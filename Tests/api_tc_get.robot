@@ -1,6 +1,5 @@
 *** Settings ***
 Library  RequestsLibrary
-Library  RequestsLibrary
 Library  Collections
 
 
