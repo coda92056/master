@@ -95,3 +95,12 @@ SignIn As Non-Existing User
     ${codevalue}=  convert to string  ${response.status_code}
     should contain   ${codevalue}    422
 
+SignIn with Username and Password
+    [Tags]  Sanity
+    create session  mysession  ${url}
+    ${body}=  create dictionary  session_email="" session_password=""
+    ${header}=  create dictionary   Content-Type=application/json
+    ${response}=  post request  mysession  /login  data=   headers=
+
+    ${codevalue}=  convert to string  ${response.status_code}
+    should contain   ${codevalue}    422
